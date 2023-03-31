@@ -22,7 +22,10 @@ class test{
         double b = 5;
         double loss = 5;
         while (loss > 0.00001){
-            loss = loss(b, m, X, Y);
+            if (loss == loss(b, m, X, Y)){
+                break;
+            }
+            loss = loss(b,m,X,Y);
             System.out.println("m:" + m + ", b:" + b + ", loss:" + loss);
             double oldM = m;
             m = m - alpha * partialM(b, m, X, Y);
