@@ -5,11 +5,14 @@ class test{
     public static void main(String[] args) {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
+        System.out.println("enter length of data:");
         int N = in.nextInt();
 
+        System.out.println("enter the " + N + " values of X");
         double[] X = new double[N];
         X = getData(N);
 
+        System.out.println("enter the " + N + " values of Y");
         double[] Y = new double[N];
         Y = getData(N);
 
